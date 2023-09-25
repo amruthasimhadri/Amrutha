@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div style="font:14px Verdana">
+
+    Select a file to upload:
+    <asp:FileUpload ID="FileUpload" Width="450px" runat="server" />
+    <p><input type="button" id="btImport" value="Import Data" runat="server" /></p>
+    <p><asp:Label id="lblConfirm" runat="server"></asp:Label></p>
+
+</div>

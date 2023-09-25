@@ -1,0 +1,17 @@
+<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.6" />
+</ItemGroup>
+
+builder.Services.AddDbContext<RealTimeContext>();
+
+Scaffold-DbContext "Data Source=ASIMHADR-L-5515\SQLEXPRESS;Initial Catalog=Doctor;;User ID=sa;Password=Welcome2evoke@1234;Trust Server Certificate=true" Microsoft.EntityFrameWorkCore.SqlServer -OutputDir Models
+information about a data source and the means of connecting to it
+"HDR=Yes;" indicates that the first row contains columnnames, not data. "HDR=No;" indicates the opposite.
+
+Data Source=ASIMHADR-L-5515\SQLEXPRESS;Initial Catalog=Doctor;User ID=sa;Password=***********
